@@ -27,6 +27,12 @@
 # find_host_package (PROGRAM ARGS)
 #  A macro used to find executable programs on the host system, not within the iOS environment.
 #  Thanks to the android-cmake project for providing the command
+if (POLICY CMP0011)
+  cmake_policy (SET CMP0011 NEW)
+endif ()
+if (POLICY CMP0054)
+  cmake_policy (SET CMP0054 NEW)
+endif ()
 
 # Standard settings
 set (CMAKE_SYSTEM_NAME Darwin)
