@@ -1,0 +1,3 @@
+[submodule "ext/QuacksTwit"]
+	path = ext/QuacksTwit
+	url = https://github.com/Perlmint/QuacksTwit.git
